@@ -1,0 +1,734 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<title>Morning Digest — Sunday, September 20</title>
+<style>
+  :root {
+    --bg: #faf8f5; --card: #ffffff; --text: #1f1d1a; --muted: #6b665e;
+    --line: #e7e2da; --accent: #b4532a; --accent-soft: #f6e7df; --top: #fff8f0;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #151412; --card: #1e1c1a; --text: #ece8e1; --muted: #9c968c;
+      --line: #2e2b27; --accent: #e8875a; --accent-soft: #3a2a21; --top: #231d18;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    -webkit-text-size-adjust: 100%;
+  }
+  main { max-width: 680px; margin: 0 auto; padding: 32px 16px 64px; }
+  header h1 { font: 700 30px/1.15 Georgia, "Times New Roman", serif; margin: 0 0 6px; letter-spacing: -0.01em; }
+  header p { margin: 0; color: var(--muted); font-size: 15px; }
+  h2 {
+    font-size: 13px; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+    margin: 40px 0 12px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+  }
+  h2.top { color: var(--accent); }
+  article {
+    background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+    padding: 18px 18px 16px; margin-bottom: 12px;
+  }
+  .top-list article { background: var(--top); }
+  article h3 { font-size: 19px; line-height: 1.3; margin: 0 0 6px; }
+  article h3 a { color: inherit; text-decoration: none; }
+  article h3 a:hover { color: var(--accent); }
+  .meta { font-size: 13px; color: var(--muted); margin-bottom: 10px; display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: center; }
+  .dots { letter-spacing: 1px; color: var(--accent); }
+  .dots span { opacity: 0.25; }
+  .badge { font-size: 11px; background: var(--accent-soft); color: var(--accent); padding: 1px 7px; border-radius: 99px; }
+  .summary { margin: 0; }
+  .why { margin: 10px 0 0; font-size: 15px; color: var(--muted); }
+  .why strong { color: var(--text); font-weight: 600; }
+  details { margin-top: 10px; font-size: 15px; }
+  summary { cursor: pointer; color: var(--accent); font-weight: 500; }
+  details ul { margin: 8px 0 0; padding-left: 20px; }
+  details li { margin-bottom: 4px; }
+  footer { margin-top: 48px; font-size: 13px; color: var(--muted); text-align: center; }
+  @media (max-width: 480px) {
+    main { padding-top: 24px; }
+    header h1 { font-size: 26px; }
+    article { padding: 16px 14px 14px; }
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>Good morning.</h1>
+    <p>Sunday, September 20 · 32 stories · about 136 min of reading</p>
+  </header>
+
+  
+
+  
+  <h2 class="top">Top stories</h2>
+  <div class="top-list">
+  <article>
+    <h3><a href="https://www.bbc.co.uk/news/articles/cvwyz29n0nn2o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Merz's CDU suffers historic losses in German state elections</a></h3>
+    <div class="meta">
+      <span>BBC World</span>
+      <span>Sun 8:22 PM</span>
+      <span>3 min read</span>
+      <span class="dots" title="Importance 4/5">●●●●<span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">German Chancellor Friedrich Merz called results in two state elections a 'disaster' for his CDU party, which fell below the 5% threshold in Mecklenburg-Vorpommern and lost to Die Linke in Berlin. The far-right AfD made major gains, though Merz vowed to remain chancellor and push ahead with economic reforms.</p>
+    <p class="why"><strong>Why it matters:</strong> Political instability in Europe's largest economy, plus the far-right's continued rise, could affect EU policy and markets.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>CDU scored its worst-ever result in Mecklenburg-Vorpommern, dropping below 5%</li><li>AfD projected to win ~38% in Mecklenburg-Vorpommern, its best showing yet</li><li>In Berlin, Die Linke beat CDU (~26% vs ~19%)</li><li>Merz faces internal pressure and rumors of a mid-term leadership swap, but insists he'll stay and push welfare/tax reforms</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://agentexecutor.io" target="_blank" rel="noopener">Google unveils AX, an open orchestrator for AI agent workloads</a></h3>
+    <div class="meta">
+      <span>Hacker News (best)</span>
+      <span>Sun 3:32 PM</span>
+      <span>4 min read</span>
+      <span class="dots" title="Importance 4/5">●●●●<span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Google has released AX, a declarative control plane for running massive fleets of AI agents, born from agentic runtime research at Google DeepMind. It sandboxes agent tasks, manages workspaces and network policies, and claims to scale to billions of concurrent agent sessions per cluster with sub-second suspend/resume.</p>
+    <p class="why"><strong>Why it matters:</strong> A significant new piece of AI infrastructure from Google aimed at running agentic AI at scale, relevant to anyone building or evaluating AI tools.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Built on 'Agent Substrate,' a compute runtime designed for high-density, stateful agent actors rather than stateless microservices or batch jobs</li><li>Core primitives: isolated sandboxed execution, workspace setup (Git repos, MCP servers, skills), network allowlist policies, and centralized model/secret config</li><li>Idle agents awaiting model or tool responses are checkpointed and resumed in under a second, letting workers share compute and cut costs</li><li>Supports generative workspace setup — describe an environment in plain English and AX configures it automatically</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://techcrunch.com/2026/09/20/is-the-ai-industry-really-ready-to-slow-down/" target="_blank" rel="noopener">TechCrunch debate: Are AI labs actually planning to slow down?</a></h3>
+    <div class="meta">
+      <span>TechCrunch</span>
+      <span>Sun 11:56 AM</span>
+      <span>7 min read</span>
+      <span class="dots" title="Importance 4/5">●●●●<span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A TechCrunch Equity podcast panel debates whether Anthropic CEO Dario Amodei's 'pace the frontier' safety plan represents a genuine slowdown push, given pushback from Nvidia's Jensen Huang (who calls AI backlash a 'hoax') and skepticism about vague details, weak regulatory enforcement, and limited consumer leverage over enterprise AI buyers.</p>
+    <p class="why"><strong>Why it matters:</strong> Directly addresses whether frontier AI labs will self-regulate or keep racing ahead, a core question shaping AI risk and policy.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Amodei's plan proposes third-party safety evaluators inside labs and international coordination on safety standards among democratic countries</li><li>Nvidia's Jensen Huang publicly sided with Trump against AI regulation, seen by panelists as self-interested given Nvidia benefits from unpaced AI growth</li><li>Panelists argue market/regulatory checks are weak: federal government isn't enforcing rules, and enterprise customers rarely switch AI vendors over ethics</li><li>Despite broad industry 'consensus' on Amodei's framework, specifics on real slowdown commitments remain vague</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://en.sedaily.com/finance/2026/09/20/samsung-to-double-hbm4-output-next-year-sources-say" target="_blank" rel="noopener">Samsung to more than double HBM4/HBM4E chip output next year</a></h3>
+    <div class="meta">
+      <span>Hacker News (best)</span>
+      <span>Sun 10:38 AM</span>
+      <span>2 min read</span>
+      <span class="dots" title="Importance 4/5">●●●●<span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Samsung Electronics plans to more than double production of its HBM4 and HBM4E high-bandwidth memory chips in 2027, driven by a 2.5x increase in glass carrier demand used in wafer thinning. Overall HBM production scale is expected to grow nearly 40% to about 250,000 wafers per month.</p>
+    <p class="why"><strong>Why it matters:</strong> HBM memory is a critical bottleneck for AI accelerators like Nvidia's GPUs, so this scale-up directly affects AI hardware supply and pricing.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Outsourced glass carrier cleaning volume will rise from 20,000 to 50,000 sheets/month next year</li><li>HBM4 mass production began in February using 10nm-class DRAM with a 4nm base die; 12-layer HBM4E samples went to Nvidia in May</li><li>HBM4 family's share of shipments is projected to jump from ~40% this year to ~80% next year</li><li>Signals Samsung ramping up capacity to meet AI chip demand alongside SK Hynix and Micron</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.npr.org/2026/09/20/g-s1-144211/germanys-merz-vows-to-press-ahead-with-reforms-after-historic-state-election-defeat" target="_blank" rel="noopener">Merz vows to press ahead with reforms after election defeat</a></h3>
+    <div class="meta">
+      <span>NPR News</span>
+      <span>Sun 10:29 AM</span>
+      <span>2 min read</span>
+      <span class="dots" title="Importance 4/5">●●●●<span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">NPR's account of the same German state elections: Merz's CDU hit a post-WWII low in Mecklenburg-Western Pomerania while AfD surged, and CDU also lost ground to the Left party in Berlin. Merz says the losses make his push for economic reform more urgent, not less, and he's canceled a UN trip to focus on the fallout.</p>
+    <p class="why"><strong>Why it matters:</strong> Continued erosion of the ruling coalition's support raises questions about Germany's ability to implement economic reforms affecting the wider EU economy.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>CDU exit poll result of just 5% in Mecklenburg-Western Pomerania, its worst ever</li><li>Berlin: CDU projected second (20%) behind Left party (24.5%)</li><li>Follows a Sept. 6 CDU defeat to AfD in Saxony-Anhalt, raising fears about far-right momentum</li><li>Merz, 70, cancels UN General Assembly trip amid calls within his own party for a leadership change</li></ul>
+    </details>
+    
+  </article>
+  </div>
+  
+
+  
+  <h2>AI & Tech</h2>
+  
+  <article>
+    <h3><a href="https://simonwillison.net/2026/Sep/20/voxium/" target="_blank" rel="noopener">Anonymous account describes AI-driven burnout at a big tech company</a></h3>
+    <div class="meta">
+      <span>Simon Willison</span>
+      <span>Sun 2:06 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A short quoted post describes a workplace where all specs, code, tests, tickets, and reports are generated by Claude Code, with employees across all seniority levels reduced to prompting the AI rather than reviewing its output. The poster says staff are working 12-13 hour days just to 'press enter,' driven by management's belief that shipping code is no longer the bottleneck.</p>
+    <p class="why"><strong>Why it matters:</strong> A firsthand anecdote illustrating how aggressively some companies are pushing AI coding agents into daily workflows, and the human cost of that shift.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Entire workflow — specs, PRDs, tickets, code, tests, reports — is produced via Claude Code at this unnamed company</li><li>All levels of engineers (L1 to L7) reportedly do the same task: prompting the AI rather than writing or reviewing work themselves</li><li>Management reportedly pushes for maximum output, citing that coding speed isn't the constraint</li><li>Employees describe working 12-13 hour days and note 'nobody is reading anything'</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://seldo.com/posts/nobody-pays-for-open-source-we-can-force-them-to/" target="_blank" rel="noopener">Essay argues package registries should charge firms to fund maintainers</a></h3>
+    <div class="meta">
+      <span>Hacker News (best)</span>
+      <span>Sun 2:04 PM</span>
+      <span>23 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A long essay argues that open-source software is trapped in a stable but harmful equilibrium: free licenses always beat paid ones (the 'evolutionarily stable strategy'), so maintainers burn out unpaid while companies like JFrog, Snyk, Docker, and Sonatype build billion-dollar businesses selling 'reliable supply' of that same free code. The author proposes that package registries — the actual choke point where free code becomes corporate supply — start charging companies directly and pass funds to maintainers, since past voluntary approaches (tips, foundations, corporate pledges) have failed to scale.</p>
+    <p class="why"><strong>Why it matters:</strong> A sharp analysis of the economics underpinning nearly all software (including AI tooling), with a concrete proposal to fix chronic open-source underfunding and security risk (e.g., the xz backdoor).</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>60% of open-source maintainers are unpaid (Tidelift, 2021-2024); Harvard estimates open source is worth $8.8 trillion, with 5% of developers producing 96% of that value</li><li>Supply-chain companies (JFrog $532M, Snyk $326M, Docker $207M revenue) profit from selling dependable access to free code, while the maintainers who write it get nothing</li><li>Docker successfully charged large companies after 2020 rate-limiting/paywalling, proving companies will pay when billed as infrastructure rather than asked to donate</li><li>Past voluntary funding efforts (GitHub Sponsors, Flossbank, Ruby Together, corporate pledges) all failed to scale or collapsed due to free-riding</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://techcrunch.com/2026/09/20/world-model-companies-are-keeping-a-lot-of-secrets/" target="_blank" rel="noopener">World model AI startups stay tight-lipped on commercial plans</a></h3>
+    <div class="meta">
+      <span>TechCrunch</span>
+      <span>Sun 1:29 PM</span>
+      <span>3 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Leading world-model companies like Yann LeCun's AMI Labs and Fei-Fei Li's World Labs have raised significant funding but remain vague about product plans and commercialization timelines. Even data suppliers say they don't know what the companies are ultimately building.</p>
+    <p class="why"><strong>Why it matters:</strong> World models are a major emerging AI frontier with implications for robotics, gaming, and self-driving tech, but investors and partners are flying blind on strategy.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>AMI Labs co-founder declined to specify products, saying company is in 'research and building phase'</li><li>World Labs' Marble is the most developed product so far, spanning media creation to robotics demos</li><li>Data supplier Physicl says it lacks insight into how its data is being used</li><li>Secrecy seen as strategic: revealing focus areas could invite competition from rivals and major labs like OpenAI/Anthropic</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.theverge.com/ai-artificial-intelligence/997936/nvidia-jensen-huang-ai-fears-overblown" target="_blank" rel="noopener">Nvidia's Jensen Huang dismisses AI existential risk fears</a></h3>
+    <div class="meta">
+      <span>The Verge</span>
+      <span>Sun 11:50 AM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">In a CBS Sunday Morning interview, Nvidia CEO Jensen Huang said there is a '0% chance' AI ends the world and called warnings from AI safety advocates irresponsible and unscientific. He also dismissed calls from Anthropic's Dario Amodei and OpenAI's Sam Altman to slow AI development, and opposed new AI regulation despite recent cases of models escaping containment and hacking other companies.</p>
+    <p class="why"><strong>Why it matters:</strong> The world's most valuable company's CEO is pushing back hard against AI safety concerns and regulation, a stance that could shape industry and policy debates.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Huang: '0% chance' of AI ending the world; says scaring people is 'irresponsible'</li><li>Dismisses Amodei/Altman calls to slow AI development as 'not grounded in science'</li><li>Opposes new AI rules or guidelines despite reported cases of models breaching containment and hacking companies</li><li>Huang's net worth rose from ~$21B (2023) to over $192B (2026), giving him a financial stake in unchecked AI growth</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.theverge.com/ai-artificial-intelligence/997867/trump-ai-force-ai-czar" target="_blank" rel="noopener">Trump proposes 'AI Force' and 'AI czar' role</a></h3>
+    <div class="meta">
+      <span>The Verge</span>
+      <span>Sun 8:39 AM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Trump announced on Truth Social plans to appoint an 'AI czar' to lead a new 'AI Force,' pledging his administration won't hinder AI industry growth. The post came amid growing bipartisan and industry calls to slow AI development, and made unsubstantiated claims that data centers boost salaries, cut taxes, and lower crime in host communities.</p>
+    <p class="why"><strong>Why it matters:</strong> Signals how the White House may shape AI policy and regulation at a time when industry oversight is a live debate.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Trump compared the proposed 'AI Force' to Space Force, calling it a 'tremendous SUCCESS'</li><li>No timeline, structure, or candidates named for the 'AI czar' role</li><li>Trump said 'Only High I.Q. individuals need apply' for the czar position</li><li>Announcement comes as calls grow across politics and industry to slow AI development</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://simonwillison.net/2026/Sep/20/llm-keys-ui/" target="_blank" rel="noopener">New llm plugin lets Codex agents fetch API keys via local UI</a></h3>
+    <div class="meta">
+      <span>Simon Willison</span>
+      <span>Sun 12:22 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Simon Willison released llm-keys-ui, a small plugin that spins up a local (or Tailscale-accessible) web interface for storing API keys, so remote coding agents like Codex Remote can retrieve them via 'llm keys get' instead of having keys pasted directly into chat sessions.</p>
+    <p class="why"><strong>Why it matters:</strong> A practical security/workflow tool for developers building with LLM agents and API keys.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Solves the problem of safely getting API keys onto remote machines controlled via phone-based coding agents</li><li>Run with: uvx --with llm-keys-ui llm keys-ui --all</li><li>Keys can later be retrieved with a command like 'llm keys get anthropic' in shell scripts</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://techcrunch.com/2026/09/20/voccis-ring-adds-a-new-form-factor-to-meeting-note-taking/" target="_blank" rel="noopener">Review: Vocci's $249 ring is a new form factor for meeting note-taking</a></h3>
+    <div class="meta">
+      <span>TechCrunch</span>
+      <span>Sun 11:32 AM</span>
+      <span>3 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">TechCrunch reviews the Vocci ring, an AI meeting-recorder in ring form (under 6g, titanium-coated) that transcribes conversations via double-tap controls. Recording quality is strong, but the companion app is described as confusing, redundant, and lacking key integrations.</p>
+    <p class="why"><strong>Why it matters:</strong> A minor gadget review of limited relevance beyond illustrating growing privacy concerns with wearable AI recorders.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>8-hour battery life, charging case adds up to 3 more charges, priced at $249</li><li>Accurately transcribes long conversations even in noisy settings</li><li>App has overlapping/confusing sections (Chat, Highlights, Notes, Base) and no reminder-app integration</li><li>Recording indicator faces the wearer, raising privacy/consent concerns since it can look like ordinary jewelry</li></ul>
+    </details>
+    
+  </article>
+  
+  
+  <h2>Business & Finance</h2>
+  
+  <article>
+    <h3><a href="https://truthout.org/articles/warren-introduces-bill-to-ban-private-equity-from-owning-medical-practices/" target="_blank" rel="noopener">Warren introduces bill to ban private equity from owning medical practices</a></h3>
+    <div class="meta">
+      <span>Hacker News (best)</span>
+      <span>Sun 3:13 PM</span>
+      <span>3 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Sen. Elizabeth Warren and 12 other Democrats introduced legislation modeled on an Oregon law to bar private equity funds, insurers, and management services organizations from owning or controlling medical practices. The bill aims to curb rising health care costs and preserve physician control over medical decisions.</p>
+    <p class="why"><strong>Why it matters:</strong> A notable policy push affecting health care costs and corporate consolidation, relevant to economic and business trends.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Private equity investment in health care rose from $5 billion in 2000 to $104 billion in 2024</li><li>82% of physicians are now employed by hospitals or corporate entities, up from 62% in 2019</li><li>Bill enforcement would rely on the FTC, state attorneys general, and a private right of action for physicians with treble damages</li><li>Employer health plan costs are projected to rise ~11% per worker in 2027 absent benefit cuts</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.theguardian.com/environment/2026/sep/20/china-stranglehold-rare-earths-hopeful-supplier-eu-viridis" target="_blank" rel="noopener">EU rare-earths hopeful urges Trump-Xi deal to curb China's export leverage</a></h3>
+    <div class="meta">
+      <span>The Guardian Business</span>
+      <span>Sun 4:00 AM</span>
+      <span>3 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Ahead of a Trump-Xi summit, an Australian mining executive supplying rare earths to Brazil, Australia, and Canada says it's critical that the leaders extend China's suspension of stricter rare-earth export curbs, as the EU scrambles to diversify supply chains away from Chinese dominance (80-90% market control).</p>
+    <p class="why"><strong>Why it matters:</strong> Rare-earth supply chains underpin EVs, wind turbines, and defense tech, making this a key economic and geopolitical flashpoint ahead of major US-China talks.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>China suspended stricter global rare-earth export restrictions after an October 2025 Trump-Xi summit, but only for 12 months — extension uncertain</li><li>EU trade deficit with China now running at €1bn/day per EU trade commissioner Šefčovič</li><li>Viridis Mining aims for 5% of global rare-earth magnet market by end of 2028, partnering with France's Solvay</li><li>Chinese goods can be ~30% cheaper, discouraging OEMs from backing new non-Chinese supply chains</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://techcrunch.com/2026/09/20/elon-musks-latest-boring-company-pitch-involves-a-hyperloop-between-austin-and-san-antonio/" target="_blank" rel="noopener">Musk floats Boring Company Hyperloop between Austin and San Antonio</a></h3>
+    <div class="meta">
+      <span>TechCrunch</span>
+      <span>Sun 12:38 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Elon Musk said The Boring Company is working on a 'simple precursor Hyperloop' that would cut the Austin-San Antonio trip to under 30 minutes; the company said it would be 'excited and honored' to build it. Many prior Boring Company projects (Chicago, LA, NYC-DC) have failed to materialize.</p>
+    <p class="why"><strong>Why it matters:</strong> Another high-profile but speculative Musk infrastructure pitch, notable mainly for its funding backdrop rather than concrete progress.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Comment made in reply to an AI-generated sci-fi video, not a formal announcement</li><li>Boring Company operates a working tunnel system in Las Vegas and recently raised $3B led by the UAE</li><li>Track record includes several announced-but-unbuilt projects in other cities</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://techcrunch.com/2026/09/20/6-days-left-to-get-ahead-at-techcrunch-disrupt-2026/" target="_blank" rel="noopener">TechCrunch Disrupt 2026 ticket discount ends Sept 25</a></h3>
+    <div class="meta">
+      <span>TechCrunch</span>
+      <span>Sun 2:41 PM</span>
+      <span>2 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Promotional notice: early-bird pricing for TechCrunch Disrupt 2026 (Oct 13–15, San Francisco) ends Sept. 25, offering up to $200 off plus group discounts. Event features 250+ speakers, a startup expo, and the Startup Battlefield pitch competition.</p>
+    <p class="why"><strong>Why it matters:</strong> Relevant only if you're considering attending a major startup/AI conference.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Conference dates: October 13–15, San Francisco</li><li>Ticket savings up to $200 expire Sept. 25 at 11:59 p.m. PT</li><li>Additional 30% off for groups of four or more</li></ul>
+    </details>
+    
+  </article>
+  
+  
+  <h2>World News</h2>
+  
+  <article>
+    <h3><a href="https://libroot.org/posts/what-happened-to-the-snowden-archive" target="_blank" rel="noopener">Investigation: what really happened to the Snowden archive</a></h3>
+    <div class="meta">
+      <span>Hacker News (best)</span>
+      <span>Sun 3:35 PM</span>
+      <span>42 min read</span>
+      <span class="dots" title="Importance 3/5">●●●<span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A deep-dive traces how major outlets (Guardian, Washington Post, NYT, ProPublica, Der Spiegel, The Intercept) stopped publishing documents from Edward Snowden's 2013 NSA leak years ago despite holding tens of thousands of files, with the last document released in May 2019. The piece documents government pressure (including the UK forcing the Guardian to destroy hard drives), self-imposed restrictions on reporting scope, and unclear/unexplained decisions to halt publication even as journalists say the archive still contains unreported material of major significance.</p>
+    <p class="why"><strong>Why it matters:</strong> Raises questions about press freedom, government influence on reporting, and unresolved surveillance revelations that could still be relevant to privacy and national security debates.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Guardian published only ~30 of 58,000 documents (0.05%) before stopping in Feb 2014; Washington Post published ~30 of 50,000+ (0.06%)</li><li>UK officials pressured the Guardian into destroying archive computers in 2013; Guardian and NYT struck an agreement to focus only on surveillance/privacy, excluding war-related material</li><li>Greenwald and Poitras say in recent years the archive still holds 'hundreds of thousands' of documents of 'enormous contemporary and historical significance' but nothing has been published since 2019</li><li>Guardian's press office declined to say whether it still holds a copy or retains any approval rights over partners' publication</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.npr.org/2026/09/20/nx-s1-5975517/ice-shooting-austin-texas" target="_blank" rel="noopener">ICE agent shoots and injures Venezuelan man in Austin, Texas</a></h3>
+    <div class="meta">
+      <span>NPR News</span>
+      <span>Sun 2:53 PM</span>
+      <span>3 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A federal immigration agent shot and injured Wilber Rafael Garces Perez, 28, in Austin on Sunday, sparking community protests. Local officials, including the mayor and a congressman, are demanding investigation and transparency, citing a pattern of disputed ICE shooting incidents in other cities this year.</p>
+    <p class="why"><strong>Why it matters:</strong> Adds to a growing pattern of controversial, sometimes fatal ICE enforcement incidents raising legal and political scrutiny of immigration policy.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Garces Perez, married to a woman with legal U.S. status, was shot inside his car and is in serious but stable condition</li><li>DHS has not commented; family says hospital and officials won't confirm his custody status</li><li>Austin mayor and Rep. Greg Casar are calling for independent investigation and accountability</li><li>At least the second ICE shooting in Texas this year, following a fatal shooting in Houston in July</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.bbc.co.uk/news/articles/cm36l2pye2kwo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Imran Khan's sister arrested ahead of Pakistan protests</a></h3>
+    <div class="meta">
+      <span>BBC World</span>
+      <span>Sun 12:04 PM</span>
+      <span>2 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Aleema Khanum, sister of jailed former Pakistani PM Imran Khan, was arrested in Lahore days before planned nationwide protests supporting Khan on September 27. Authorities allege she was mobilizing supporters and inciting unrest; her party calls the detention illegal.</p>
+    <p class="why"><strong>Why it matters:</strong> Signals rising political tension in Pakistan, a nuclear-armed nation, ahead of a major planned protest.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Khanum ordered detained for 30 days, taken to Kot Lakhpat jail</li><li>Arrest comes ahead of Sept 27 protest march on Islamabad, which is already fortified with shipping containers</li><li>Imran Khan has been imprisoned since 2023 on multiple charges he says are politically motivated</li><li>Pakistan's interior minister says government will act to stop the protests</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.npr.org/2026/09/20/nx-s1-5975449/trump-washington-dc-arch-military-complex-snipers-drones" target="_blank" rel="noopener">Trump plans D.C. arch to double as military complex</a></h3>
+    <div class="meta">
+      <span>NPR News</span>
+      <span>Sun 8:05 AM</span>
+      <span>2 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">President Trump announced his proposed 250-foot triumphal arch near the National Mall will function as a military complex, storing drones and snipers with ammunition on its roof and plaza. The project faces legal challenges from Vietnam War veterans and a court order requiring 48 hours' notice before any construction activity.</p>
+    <p class="why"><strong>Why it matters:</strong> It's an unusual clash between executive power, national monuments law, and the courts playing out in the capital.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Trump says the arch will house drones, snipers, and sniper ammunition for 'National Security purposes'</li><li>Arch would stand between Arlington National Cemetery and the Lincoln Memorial, twice the height of the Lincoln Memorial</li><li>Judge Tanya Chutkin ordered 48 hours' notice before any construction, amid a lawsuit claiming the arch would desecrate Arlington and lacks congressional approval</li><li>Interior Secretary Doug Burgum said groundbreaking could happen within two weeks despite pending federal reviews</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.theguardian.com/us-news/2026/sep/20/us-coalminers-black-lung-disease" target="_blank" rel="noopener">Black lung disease surges among US coal miners as benefit appeals drag on</a></h3>
+    <div class="meta">
+      <span>The Guardian Business</span>
+      <span>Sun 4:00 AM</span>
+      <span>5 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Black lung disease cases among Appalachian coal miners have hit a nearly 50-year high, driven by silica dust in modern coal seams, even as the Trump administration delays a federal silica safety rule and miners face years-long fights to keep already-awarded federal benefits from operator appeals.</p>
+    <p class="why"><strong>Why it matters:</strong> Illustrates a human and economic cost of regulatory rollback under the current administration, relevant to labor and energy policy debates.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>32.5% of veteran underground miners in central Appalachia now have black lung disease, per NIOSH data — worst rate since 1978</li><li>Median appealed benefits claim takes three-plus years to resolve; some cases exceed 10 years</li><li>40% of approved DOL claims between 2013-2024 were disputed by coal operators; 390 beneficiaries had approved claims later denied on appeal</li><li>MSHA has indefinitely delayed enforcing a 2024 silica dust rule pending litigation, despite union pressure to enforce it</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.bbc.co.uk/news/videos/cq0lr24x3ep1o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Video shows cargo ship colliding with fishing vessel near Singapore</a></h3>
+    <div class="meta">
+      <span>BBC World</span>
+      <span>Sun 7:27 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">BBC Verify authenticated footage circulating on social media showing a cargo ship crashing into a fishing vessel in waters near Singapore, likely on September 17. It's unclear if anyone was injured or what caused the collision.</p>
+    <p class="why"><strong>Why it matters:</strong> Minor maritime incident with no clear broader economic or policy implications.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Collision traced to waters near Singapore, likely Sept 17</li><li>Unclear if there were injuries or fatalities</li><li>Cause of the crash not yet known</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.bbc.co.uk/news/videos/c5gmrlm7pm0vo?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">BBC finds abusive Indonesian teacher secretly released early</a></h3>
+    <div class="meta">
+      <span>BBC World</span>
+      <span>Sun 4:09 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">BBC Eye located Mochamad Subchi Azal Tsani, an Indonesian teacher imprisoned for sexually assaulting a student, who was found to have been secretly granted early release. Other students, including one identified as Ira, allege years of rape and abuse by him.</p>
+    <p class="why"><strong>Why it matters:</strong> Raises accountability concerns in Indonesia's justice system, though outside this reader's core interest areas.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Teacher known as 'Bechi' was released early under legal sentence reductions, per Indonesia's Ministry of Immigration and Correction</li><li>Multiple additional abuse allegations from former students</li><li>Bechi did not respond to the allegations put to him by the BBC</li></ul>
+    </details>
+    
+  </article>
+  
+  
+  <h2>Science</h2>
+  
+  <article>
+    <h3><a href="https://arstechnica.com/science/2026/09/t-rex-teeth-indicate-it-ran-as-warm-as-an-elephant/" target="_blank" rel="noopener">T. rex teeth suggest body temperature like an elephant's</a></h3>
+    <div class="meta">
+      <span>Ars Technica</span>
+      <span>Sun 2:00 AM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">UCLA researchers used clumped isotope thermometry on fossilized T. rex teeth to estimate its body temperature at about 36°C, comparable to a modern elephant. The method avoids a key flaw in earlier oxygen-isotope techniques by not depending on unknown ancient body-water composition.</p>
+    <p class="why"><strong>Why it matters:</strong> An interesting science finding, though outside your core interests in tech and business.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Technique measures how often heavy carbon-13 and oxygen-18 isotopes bond in tooth enamel, which depends on formation temperature</li><li>Result supports the view that T. rex was warm-blooded (endothermic) rather than a sluggish reptile</li><li>Same method was previously applied to Jurassic sauropods by lead researcher Robert Eagle</li><li>Adds hard data to a long-running debate over dinosaur physiology previously based on indirect evidence</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.npr.org/2026/09/20/nx-s1-5975478/poison-suspected-in-deaths-of-ten-lions-in-game-reserve-in-tanzania" target="_blank" rel="noopener">Ten lions found dead from suspected poisoning in Tanzania reserve</a></h3>
+    <div class="meta">
+      <span>NPR News</span>
+      <span>Sun 2:39 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Ten lions were discovered dead in Tanzania's Ngorongoro Conservation Area, a UNESCO World Heritage Site, with officials suspecting poisoning. It follows a similar suspected poisoning of 18 elephants in neighboring Kenya over the summer.</p>
+    <p class="why"><strong>Why it matters:</strong> Highlights escalating human-wildlife conflict threatening endangered species in a major conservation and tourism area, but has limited direct relevance to this reader's core interests.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Deaths discovered Friday in the Ngorongoro Conservation Area, home to pastoral communities and tourists</li><li>Investigation launched to identify cause and those responsible</li><li>Tanzania holds roughly half the world's wild lion population, listed as vulnerable</li><li>Kenya's recent elephant poisonings were linked to suspected cyanide, possibly tied to banned pesticide use by farmers</li></ul>
+    </details>
+    
+  </article>
+  
+  
+  <h2>Culture & Other</h2>
+  
+  <article>
+    <h3><a href="https://www.theverge.com/entertainment/997853/a24-scp-movie-creative-commons-license" target="_blank" rel="noopener">A24's SCP Foundation horror film faces licensing backlash</a></h3>
+    <div class="meta">
+      <span>The Verge</span>
+      <span>Sun 5:45 AM</span>
+      <span>4 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A24's upcoming V/H/S: SCP film is facing community backlash because the SCP Foundation universe is governed by a Creative Commons ShareAlike license that prohibits exclusive commercial rights. The studio's claim of 'worldwide rights' conflicts with license terms requiring any derivative work to be freely redistributable, echoing A24's earlier missteps with its Backrooms film.</p>
+    <p class="why"><strong>Why it matters:</strong> It's a cautionary tale about studios trying to commercialize open-license internet fan content, with real legal and business-model risks.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>SCP Foundation content is licensed under CC BY-SA 3.0, meaning derivatives must also be freely shareable and can't have exclusive distribution rights.</li><li>SCP Wiki admins say A24 and partners (Image Nation, Spooky Pictures) never contacted them despite the community's outreach attempts.</li><li>Legal experts say if A24 proceeds under the SCP name without a separate licensing deal, the film would be 'unauthorized and infringing,' potentially killing the project.</li><li>A24 previously angered fans by filing copyright claims against other Backrooms creators before backing down; likely outcomes here are dropping SCP branding or releasing under the open license.</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.bbc.co.uk/news/articles/cqm27pnyd294o?at_medium=RSS&at_campaign=rss" target="_blank" rel="noopener">Elderly man dies after Greek beach sunlounger fight</a></h3>
+    <div class="meta">
+      <span>BBC World</span>
+      <span>Sun 2:17 PM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">An 82-year-old man died after a fight broke out over sunlounger use at Vouliagmeni beach near Athens with a 76-year-old man. The younger man was arrested, and authorities are investigating the cause of death.</p>
+    <p class="why"><strong>Why it matters:</strong> Local human-interest story with no broader economic or policy relevance.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Dispute over a reserved sunlounger escalated into a chaotic fight involving multiple people</li><li>76-year-old arrested; a 21-year-old woman with him was detained then released</li><li>Victim received CPR and defibrillation but died in hospital</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.theverge.com/report/997948/no-dogs-in-space-is-back-punk-2-0-music-history-podcast" target="_blank" rel="noopener">Music history podcast 'No Dogs in Space' returns with punk season</a></h3>
+    <div class="meta">
+      <span>The Verge</span>
+      <span>Sun 1:51 PM</span>
+      <span>4 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">The Verge covers the return of music history podcast No Dogs in Space after a two-year hiatus, with hosts Carolina Hidalgo and Marcus Parks launching season four, 'Punk 2.0,' starting with a New York Dolls series. The hosts describe abandoned plans to cover the DC punk scene and share tangents from the new season.</p>
+    <p class="why"><strong>Why it matters:</strong> Not relevant to core interests (AI, tech business, world economy) — a niche culture/podcast recommendation piece.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>New season 'Punk 2.0' premiered this week with a New York Dolls series (Staten Island's David Johansen fronted the band)</li><li>Hosts scrapped a planned DC punk scene season after Bad Brains research revealed homophobic content, then found the broader DC scene too sprawling to cover</li><li>A Link Wray two-part series came out of the abandoned DC effort and will air later this year</li><li>For the first time, episodes will also be posted as full video on YouTube, in addition to Apple Podcasts and Spotify</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.theverge.com/games/997880/hideo-kojima-productions-physint-xbox-sony-playstation" target="_blank" rel="noopener">Kojima Productions denies studio is in financial trouble</a></h3>
+    <div class="meta">
+      <span>The Verge</span>
+      <span>Sun 11:15 AM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Following reports that Sony dropped Kojima's Physint game (which is now moving to Xbox) amid missed deadlines and budget concerns, Kojima Productions pushed back publicly. The studio says it remains 'healthy and profitable' and that its relationship with PlayStation is still strong.</p>
+    <p class="why"><strong>Why it matters:</strong> A niche gaming-industry dispute with limited relevance to AI, tech business strategy, or broader economic news.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Sony reportedly dropped Physint over missed deadlines, budget/profitability concerns, and timed-exclusivity issues; the game is now headed to Xbox.</li><li>Kojima told IGN he worried losing the contract could force layoffs or studio collapse.</li><li>Kojima Productions' official statement disputes reports of trouble, citing Death Stranding sales concerns and lost Sony funding as inaccurate framing.</li><li>The studio says it is in a 'healthy, profitable state' with a strong PlayStation relationship.</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://www.npr.org/2026/09/20/g-s1-143447/photos-fishermen-sea-india" target="_blank" rel="noopener">Photo essay: Life of fishing workers at India's Kasimedu harbor</a></h3>
+    <div class="meta">
+      <span>NPR News</span>
+      <span>Sun 5:24 AM</span>
+      <span>5 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">A photo-driven feature profiles workers at the overcrowded Kasimedu fishing harbor in Chennai, India, including a 60-year-old 'basket man' who carries fish for $5/day and a former smuggler-turned-fish vendor. It captures the precarious economics and deep emotional pull of the fishing life for the harbor's roughly 30,000 workers.</p>
+    <p class="why"><strong>Why it matters:</strong> A human-interest look at informal labor and economic precarity in the developing world, outside this reader's core interests in tech and business.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>Basket men carry 35-lb fish baskets up to 50 times a shift for about $5/day, with no job security and pay docked for 'missing' fish.</li><li>Kasimedu harbor, built for under 600 boats, now serves over 1,000, supporting ~30,000 workers (fishermen, auctioneers, vendors, ice suppliers).</li><li>Average fisherman earnings are about $200/month with no safety nets; one bad season or illness can push families into poverty.</li><li>Younger generation is leaving for corporate jobs, though some return mid-career, drawn back by the pull of the sea.</li></ul>
+    </details>
+    
+  </article>
+  
+  <article>
+    <h3><a href="https://arstechnica.com/cars/2026/09/dont-call-it-an-suv-the-ferrari-purosangue-review/" target="_blank" rel="noopener">Ferrari's Purosangue: a V12 five-door, not an SUV</a></h3>
+    <div class="meta">
+      <span>Ars Technica</span>
+      <span>Sun 3:00 AM</span>
+      <span>2 min read</span>
+      <span class="dots" title="Importance 1/5">●<span>●</span><span>●</span><span>●</span><span>●</span></span>
+      
+      
+    </div>
+    <p class="summary">Ars Technica reviews Ferrari's first true five-door vehicle, the Purosangue, which pairs a 715hp naturally aspirated V12 with all-wheel drive and rear-hinged doors for proper rear passenger access. Ferrari insists it's not an SUV but a 'Ferrari Utility Vehicle,' with a near 50:50 weight split.</p>
+    <p class="why"><strong>Why it matters:</strong> A niche car review with no direct bearing on tech, business, or world affairs.</p>
+    
+    <details>
+      <summary>Key points</summary>
+      <ul><li>715 hp (533 kW), 528 lb-ft 6.5L V12 in a front-mid engine layout</li><li>Rear-hinged doors give access to two rear bucket seats, but seats don't fold flat and cargo area is walled off</li><li>4,784 lbs curb weight, 118.1-inch wheelbase, all-wheel drive via separate front power unit</li><li>Continues Ferrari's decades-long line of multi-seat cars going back to the 1960s 250 GT 2+2</li></ul>
+    </details>
+    
+  </article>
+  
+  
+  <h2>Not summarized</h2>
+  
+  <article>
+    <h3><a href="https://arstechnica.com/security/2026/09/an-undercover-google-analyst-infiltrated-a-notorious-supply-chain-hacking-gang/" target="_blank" rel="noopener">An undercover Google analyst infiltrated a notorious supply-chain hacking gang</a></h3>
+    <div class="meta">
+      <span>Ars Technica</span>
+      <span>Sun 4:07 AM</span>
+      <span>1 min read</span>
+      <span class="dots" title="Importance 2/5">●●<span>●</span><span>●</span><span>●</span></span>
+      
+      <span class="badge">not summarized</span>
+    </div>
+    <p class="summary">Before two of its alleged members were arrested and charged in Australia last month, the hacker group known as TeamPCP carried out a hacking spree unlike any other in history. It tainted hundreds of open-source programs with its malware, stole developer accounts to perpetuate that software supply-ch…</p>
+    
+    
+  </article>
+  
+  
+
+  
+
+  <footer>From Ars Technica, BBC World, Hacker News (best), NPR News, Simon Willison, TechCrunch, The Guardian Business, The Verge</footer>
+</main>
+</body>
+</html>
